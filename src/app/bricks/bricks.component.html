@@ -1,5 +1,5 @@
 <masonry [options]="myOptions">
-  <masonry-brick class="brick" *ngFor="let brick of bricks" [style.height]="brick.height + 'px'">
+  <masonry-brick class="brick col-lg-4 col-md-6" *ngFor="let brick of bricks" [style.height]="brick.height + 'px'">
     <a [href]="brick.github || brick.demo" target="_blank">
       <div class="brick-image" [style.background-image]="'url(' + brick.image + ')'">
       </div>
