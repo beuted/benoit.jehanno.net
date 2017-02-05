@@ -44,15 +44,11 @@
     height: 100%;
     color: white;
     text-shadow: 0px 0px 12px #000;
-}
-
-.brick .brick-title h2 {
-    text-align: center;
     opacity: 0;
 
     transition: opacity 1s ease-in-out;
 }
 
-.brick:hover .brick-title h2 {
+.brick:hover .brick-title {
     opacity: 1;
 }

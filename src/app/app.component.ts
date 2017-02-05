@@ -37,6 +37,13 @@ export class AppComponent {
         date: '2012'
      },
      {
+        title: 'csgo-mates.com',
+        demo: 'http://csgo-mates.com',
+        image: './assets/images/projects/csgo-mates.PNG',
+        height: 300,
+        date: '2013-2014'
+     },
+     {
         title: 'smoothycon',
         github: 'https://github.com/beuted/smoothycon',
         demo: 'https://smoothycon.herokuapp.com/demo.html',
@@ -52,12 +59,36 @@ export class AppComponent {
         date: 'September 2015'
      },
      {
-        title: 'csgo-mates.com',
-        github: 'http://csgo-mates.com',
-        image: './assets/images/projects/csgo-mates.PNG',
-        height: 500,
-        date: '2013-2014'
+        title: 'The deepest picture',
+        github: 'https://github.com/beuted/TheDeepestPicture',
+        demo: 'https://the-deepest-picture.herokuapp.com/',
+        image: './assets/images/projects/TheDeepestPicture.PNG',
+        height: 300,
+        date: '2016'
      },
+     {
+        title: 'Encryption playground',
+        github: 'https://github.com/beuted/EncryptionPlayground',
+        demo: 'https://encryption-playground.herokuapp.com',
+        image: './assets/images/projects/encryption-playground.PNG',
+        height: 300,
+        date: '2016'
+     },
+     {
+        title: 'Crawletto',
+        github: 'https://github.com/beuted/Crawletto',
+        demo: 'https://crawletto.herokuapp.com/',
+        image: './assets/images/projects/crawletto.PNG',
+        height: 300,
+        date: '2016'
+     },
+     {
+        title: 'Performance hunting',
+        github: 'https://github.com/beuted/PerformanceHunting',
+        image: './assets/images/projects/performance-hunting.jpg',
+        height: 300,
+        date: '2016'
+     }
    ];
   
   constructor() {
