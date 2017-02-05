@@ -1,0 +1,11 @@
+<masonry [options]="myOptions">
+  <masonry-brick class="brick" *ngFor="let brick of bricks" [style.height]="brick.height + 'px'">
+    <div class="brick-image" [style.background-image]="'url(' + brick.image + ')'">
+    </div>
+    <div class="brick-title-container" [style.height]="brick.height + 'px'">
+      <div class="brick-title">
+        <h2>{{brick.title}}</h2>
+      </div>
+    </div>
+  </masonry-brick>
+</masonry>
