@@ -1,4 +1,5 @@
-<div class="page">
+
+<div class="intro">
   <div class="intro-header">
     <div class="container">
       <div class="row">
@@ -18,19 +19,25 @@
                   <a href="http://stackoverflow.com/users/2531058/dekajoo" class="btn btn-default btn-lg"><i class="fa fa-stack-overflow fa-fw"></i> <span class="network-name">Stack Overflow</span></a>
               </li>
             </ul>
+            <a pageScroll [pageScrollDuration]="2000" href="#projects" class="btn btn-circle intro-scroll-button">
+              <i class="fa fa-angle-down animated"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
+<div id="projects" class="projects-section">
   <div class="container">
+    <h1 class="section-title">My projects</h1>
     <bricks [bricks]="bricks"></bricks>
   </div>
+</div>
 
-  <div class="container">
-    <footer>
-      <p>© 2017 Benoit Jehanno</p>
-    </footer>
-  </div>
+<div class="container">
+  <footer>
+    <p>© 2017 Benoit Jehanno</p>
+  </footer>
 </div>

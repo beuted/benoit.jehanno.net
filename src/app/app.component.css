@@ -1,20 +1,27 @@
-.page {
-    background-color: #252830;
-}
-
-.intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    color: #F4F4F4;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, #F4F4F4 100%), url(./assets/images/background-intro.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
+    -o-background-size: cover;
 }
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+.intro .intro-header {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+@media (min-width: 768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
 }
 
 .intro-message > h1 {
@@ -25,12 +32,49 @@
 
 .intro-divider {
     width: 400px;
-    border-top: 1px solid #f8f8f8;
+    border-top: 1px solid #F4F4F4;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-social-buttons {
+    margin-bottom: 80px;
+}
+
+.intro-scroll-button {
+    font-size: 50px;
+    color: #F4F4F4;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #F4F4F4;
+    border-radius: 100% !important;
+    font-size: 40px;
+    background: transparent;
+
+    transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-circle > i {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.btn-circle:hover > i,
+.btn-circle:focus > i {
+    transform: scale(1.1);
 }
 
 @media(max-width:767px) {
@@ -63,3 +107,13 @@
     font-weight: 400;
     letter-spacing: 2px;
 }
+
+.projects-section {
+    background-color: #F4F4F4;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
