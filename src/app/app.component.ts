@@ -89,6 +89,13 @@ export class AppComponent {
         image: './assets/images/projects/performance-hunting.jpg',
         height: 300,
         date: '2016'
+     },
+     {
+        title: 'benoit.jehanno.net',
+        github: 'https://github.com/beuted/benoit.jehanno.net',
+        image: './assets/images/projects/benoit-jehanno-net.PNG',
+        height: 300,
+        date: '2017'
      }
    ];
   
