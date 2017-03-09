@@ -68,7 +68,7 @@ export class AppComponent {
         date: '2016'
      },
      {
-        title: 'Encryption playground',
+        title: 'Encryption playgrd',
         github: 'https://github.com/beuted/EncryptionPlayground',
         demo: 'https://encryption-playground.herokuapp.com',
         image: './assets/images/projects/encryption-playground.PNG',
@@ -94,6 +94,13 @@ export class AppComponent {
         title: 'benoit.jehanno.net',
         github: 'https://github.com/beuted/benoit.jehanno.net',
         image: './assets/images/projects/benoit-jehanno-net.PNG',
+        height: 300,
+        date: '2017'
+     },
+     {
+        title: 'typescript workshop',
+        github: 'https://github.com/beuted/typescript-workshop',
+        image: './assets/images/projects/typescript-workshop.PNG',
         height: 300,
         date: '2017'
      }
