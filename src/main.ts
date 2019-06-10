@@ -1,10 +1,15 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { environment } from './environments/environment';
-import { AppModule } from './app/app.module';
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import { VueMasonryPlugin } from 'vue-masonry';
 
-if (environment.production) {
-  enableProdMode();
-}
+Vue.use(VueMasonryPlugin)
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount('#app');

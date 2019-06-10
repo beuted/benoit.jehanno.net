@@ -1,7 +1,40 @@
+<template>
+  <div>
+    <div v-masonry transition-duration="0.3s" item-selector=".brick">
+      <div v-masonry-tile class="brick" v-for="project in projects" :key="project.title">
+        <a :href="project.github || project.demo" target="_blank">
+          <div class="brick-image" :style="{ backgroundImage: 'url(\'/projects/' + project.image + '\')' }">
+          </div>
+          <div class="brick-title-container" :style="{ height: project.height + 'px' }">
+            <div class="brick-title">
+            <h2>{{project.title}}</h2>
+            <h3>{{project.date}}</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class ProjectSection extends Vue {
+  @Prop() public projects!: { title: string, github: string, demo: string, image: string, height: number, date: string } [];
+
+  public mounted() {
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
 .brick {
     position: relative;
     overflow: hidden;
-    width: 380px;
+    width: 370px;
     min-height: 300px;
     padding: 0;
 }
@@ -56,3 +89,4 @@
     opacity: 1;
     letter-spacing: 3px;
 }
+</style>
