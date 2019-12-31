@@ -2,6 +2,8 @@
 
 This project was generated with **vue-cli** (It was previously done with ng-cli but the overhead of angular was way too big so when I got webpack issues for the 3rd times coming back to the project and realized I had giga-tonnes of node_modules I switched 👋)
 
+**I Also stopped vue-cli to try some react so the code of benoit.jehanno.net new verstion is here now: https://github.com/beuted/timeline**
+
 ## [Preproduction](https://benoit-jehanno-net.herokuapp.com/)
 
 ## Development
