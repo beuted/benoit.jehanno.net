@@ -93,7 +93,7 @@ export default class Home extends Vue {
      },
      {
         title: 'csgo-mates.com',
-        demo: 'http://csgo-mates.com',
+        github: 'https://github.com/beuted/csgo-mates',
         image: 'csgo-mates.PNG',
         height: 300,
         date: '2013-2014'
